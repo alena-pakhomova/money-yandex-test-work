@@ -1,11 +1,16 @@
 {
   "name": "money-yandex-test-work",
   "scripts": {
-    "start": "browser-sync start --server --files \"*.css, *.html, js/*.js\" --browsers \"Chrome\""
+    "start": "browser-sync start --server --files \"*.css, *.html, dist/*.js\" --browsers \"Chrome\"",
+    "gulp": "./node_modules/.bin/gulp"
   },
   "author": "Alena Pakhomova",
   "license": "MIT",
   "dependencies": {
     "browser-sync": "^2.24.7"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1"
   }
 }
