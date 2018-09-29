@@ -550,8 +550,8 @@
 
  .card-promo__title_size_l {
      font-size: 2.625rem;
-     font-weight: 200;
-     margin: 20px 0 25px;
+     font-weight: lighter;
+     margin: 60px 0 25px;
      line-height: 26px;
  }
 
@@ -560,3 +560,222 @@
      line-height: 1.875rem;
      margin-bottom: 40px;
  }
+
+ .promo-button_size_m {
+     width: 155px;
+ }
+
+ /*-------------------price card-------------*/
+
+ .price__amount {
+     font-size: 6.125rem;
+     line-height: normal;
+     color: #1c1c1c;
+     text-align: center;
+ }
+
+
+ .card-promo__price-info {
+     background-color: #fff;
+     padding: 45px;
+ }
+
+ .card-promo__price-info_price-yes {
+     font-size: 2rem;
+     font-family: "YandexSansText-Bold";
+     color: #9a9a9a;
+     margin-bottom: 20px;
+     text-align: center;
+ }
+
+ .card-promo__price-info_final {
+     font-size: 1rem;
+     font-weight: 400;
+     padding: 0;
+     line-height: normal;
+     text-align: center;
+ }
+
+ /*---------------card-promo__how-to-get---------*/
+
+ .card-promo__how-to-get {
+     background: #f4f4f4;
+     padding: 20px;
+     line-height: 1.25rem;
+ }
+
+ .card-promo__how-to-get .text-card__title {
+     text-align: center;
+     margin-bottom: 10px;
+     font-size: 1.5rem;
+     font-weight: 400;
+ }
+
+ .layout {
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     align-items: flex-start;
+     margin-top: 35px;
+     margin-bottom: 55px;
+ }
+
+ .layout__col-two,
+ .layout__col-four {
+     width: 310px;
+ }
+
+ .layout__col-one,
+ .layout__col-three {
+     padding-left: 30px;
+     padding-right: 30px;
+ }
+
+ /*-------commissions----------------------*/
+
+ .card-promo__commissions {
+     padding: 30px 40px 20px;
+     background: #fff;
+ }
+
+ .card-promo__commissions-item {
+     padding: 20px 0;
+     border-top: 1px solid #ccc;
+     white-space: normal;
+     font-size: .875rem;
+     color: #000;
+     font-family: "YandexSansText-Bold";
+     display: block;
+     text-align: left;
+     position: relative;
+ }
+
+ .card-promo__commissions-set {
+
+     font-family: "YandexSansText-Regular";
+     position: absolute;
+     right: 0;
+ }
+
+
+ .card-promo__commissions-tarif {
+     color: #999;
+     text-decoration: none;
+     font-size: .9375rem;
+     line-height: 1.0625rem;
+     margin-top: 25px;
+     margin-bottom: 20px;
+     text-align: center;
+     display: block;
+ }
+
+ .card-promo__commissions-tarif-list {
+     list-style: none;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: flex-start;
+     padding: 35px;
+ }
+
+ .card-promo__commissions-tarif-item {
+     text-align: center;
+     width: 172px;
+     line-height: 1.25rem;
+     font-size: 14px;
+     margin: 0 5px 0 5px;
+
+ }
+
+ .card-promo__commissions-tarif-img {
+     margin-bottom: 15px;
+     width: auto;
+     height: 50px;
+ }
+
+ .card-promo__button-yellow {
+     font-size: 1.25rem;
+     line-height: 3.125rem;
+     color: #000;
+     border-radius: 3px;
+     background: linear-gradient(to bottom, #fde157 100%, #fbd847 100%);
+     transition: background-color .1s ease-out 0s;
+     margin: 30px auto 50px auto;
+     text-decoration: none;
+     width: 175px;
+     height: 50px;
+     display: block;
+     text-align: center;
+ }
+/*---------------modal window-----------------------*/
+.card-modwindow {
+    position: absolute;
+    width: 830px;
+    height: 540px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px 40px 20px 40px;
+    box-sizing: border-box;
+}
+
+.card-modwindow__card {
+     width: 330px;
+     height: 210px;
+     background-image: url(img/card.svg);
+     background-size: cover;
+     border-radius: 9px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+.card-modwindow__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 2px solid #ccc;
+    padding-top: 20px;
+}
+.card-modwindow__item {
+      border: 3px solid #fff;
+    border-radius: 5px;
+    width: 110px;
+    height: 70px;
+     transition: all 120ms;
+    cursor: pointer;
+}
+
+.card-modwindow__img {
+width: 110px;
+    height: auto;
+    object-fit: contain;
+}
+
+.card-modwindow__button {
+    background-color: #EBEBEB;
+    color: #807A7A;
+    display: block;
+     text-align: center;
+    transition: all 120ms;
+     font-size: 1.125rem;
+     line-height: 2.375rem;
+     border-radius: 3px;
+    width: 150px;
+    margin: 30px auto 30px auto;
+    text-decoration: none;
+}
+.card-modwindow__button:hover {
+    background-color: #DCDBDB;
+}
+.card-modwindow__item_selected {
+    border: 3px solid #FFCF01;
+}
+
+
+.card-modwindow__item:hover {
+    border: 3px solid #FFCF01;
+     transition: all 120ms;
+}
+
+
