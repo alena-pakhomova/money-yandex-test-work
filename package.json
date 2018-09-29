@@ -1,14 +1,10 @@
 {
-  "name": "yandex_card",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "money-yandex-test-work",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "browser-sync start --server --files \"*.css, *.html\" --browsers \"Chrome\""
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Alena Pakhomova",
+  "license": "MIT",
   "dependencies": {
     "browser-sync": "^2.24.7"
   }
