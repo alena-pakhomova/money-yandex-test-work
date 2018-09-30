@@ -335,13 +335,13 @@
 
  .card-promo_effect_shadow:hover .card-promo__banner {
      transform: translateX(130px);
-     opacity: 0;
+     /*opacity: 0;*/
      transition: all .6s cubic-bezier(.165, .84, .44, 1);
  }
 
  .card-promo_effect_shadow:hover .card-promo__banner_transition_left {
      transition: all .6s cubic-bezier(.165, .84, .44, 1);
-     right: 51px;
+     right: 50px;
  }
 
  .card-promo__icon-link {
@@ -727,6 +727,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
+    transition: all .6s cubic-bezier(.165, .84, .44, 1);
 }
 .card-modwindow__list {
     list-style: none;
