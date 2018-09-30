@@ -747,14 +747,43 @@
 .card-modwindow__card {
      width: 330px;
      height: 210px;
-     background-image: url(img/card.svg);
-     background-size: cover;
      border-radius: 9px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
     transition: all .6s cubic-bezier(.165, .84, .44, 1);
 }
+
+.card-modwindow__card1 {
+    background-image: url(img/card.svg);
+    background-size: cover;
+ }
+
+ .card-modwindow__card2 {
+    background-image: url(img/card1.png);
+    background-size: cover;
+}
+
+.card-modwindow__card3 {
+    background-image: url(img/card2.png);
+    background-size: cover;
+}
+
+.card-modwindow__card4 {
+    background-image: url(img/card3.png);
+    background-size: cover;
+}
+
+.card-modwindow__card5 {
+    background-image: url(img/card4.png);
+    background-size: cover;
+}
+
+.card-modwindow__card6 {
+    background-image: url(img/card5.png);
+    background-size: cover;
+}
+
 .card-modwindow__list {
     list-style: none;
     display: flex;

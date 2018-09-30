@@ -1,8 +1,8 @@
-function cardPreview(domElem) {
-    let currentCardPreviewClass = "card-promo__icon-link_card1";
+function cardPreview(domElem, currentClass, newClassBaseName) {
+    let currentCardPreviewClass = currentClass;
 
     this.setCardPreview = function(cardIndex) {
-        const newCardClass = "card-promo__icon-link_card" + (cardIndex);
+        const newCardClass = newClassBaseName + (cardIndex);
         domElem.classList.remove(currentCardPreviewClass);
         domElem.classList.add(newCardClass);
         currentCardPreviewClass = newCardClass;

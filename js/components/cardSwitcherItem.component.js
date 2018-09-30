@@ -1,5 +1,4 @@
-function cardSwitcherItem(domElem, index, onClickCallback) {
-    const SELECTED_ITEM_CLASS_NAME = "card-promo__slide-item_select";
+function cardSwitcherItem(domElem, selectedItemClassName, index, onClickCallback) {
     const self = this;
 
     this.domElement = domElem;
@@ -7,11 +6,11 @@ function cardSwitcherItem(domElem, index, onClickCallback) {
     this.onClickCallback = onClickCallback;
 
     this.select = function() {
-        domElem.classList.add(SELECTED_ITEM_CLASS_NAME);
+        domElem.classList.add(selectedItemClassName);
     };
 
     this.unSelect = function() {
-        domElem.classList.remove(SELECTED_ITEM_CLASS_NAME);
+        domElem.classList.remove(selectedItemClassName);
     };
 
     this.domElement.onclick = function() {
