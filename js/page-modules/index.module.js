@@ -6,7 +6,7 @@ function indexPageModule() {
     const cardsSwitcherItemsDomElem = document.getElementsByClassName("card-promo__slide-item");
 
     const localStorageService = new LocalStorageService();
-    const cardPreviewComponent = new cardPreview(cardPreviewDomElem);
+    const cardPreviewComponent = new cardPreview(cardPreviewDomElem, "card-promo__icon-link_card1", "card-promo__icon-link_card");
 
     for (let i = 0; i < cardsSwitcherItemsDomElem.length; i++) {
         const item = cardsSwitcherItemsDomElem[i];
@@ -20,7 +20,7 @@ function indexPageModule() {
             localStorageService.setSelectedCardIndex(si.index);
         };
 
-        const newSwitcherItem = new cardSwitcherItem(item, i + 1, itemClickCallback);
+        const newSwitcherItem = new cardSwitcherItem(item, "card-promo__slide-item_select", i + 1, itemClickCallback);
         cardsSwitcherItems.push(newSwitcherItem);
     }
 

@@ -211,7 +211,6 @@
      font-size: 1.375rem;
      color: #000;
      font-weight: normal;
-     padding-bottom: 35px;
  }
 
  .card-view__link {
@@ -748,20 +747,50 @@
 .card-modwindow__card {
      width: 330px;
      height: 210px;
-     background-image: url(img/card.svg);
-     background-size: cover;
      border-radius: 9px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
     transition: all .6s cubic-bezier(.165, .84, .44, 1);
 }
+
+.card-modwindow__card1 {
+    background-image: url(img/card.svg);
+    background-size: cover;
+ }
+
+ .card-modwindow__card2 {
+    background-image: url(img/card1.png);
+    background-size: cover;
+}
+
+.card-modwindow__card3 {
+    background-image: url(img/card2.png);
+    background-size: cover;
+}
+
+.card-modwindow__card4 {
+    background-image: url(img/card3.png);
+    background-size: cover;
+}
+
+.card-modwindow__card5 {
+    background-image: url(img/card4.png);
+    background-size: cover;
+}
+
+.card-modwindow__card6 {
+    background-image: url(img/card5.png);
+    background-size: cover;
+}
+
 .card-modwindow__list {
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
     border-top: 2px solid #ccc;
     padding-top: 20px;
 }
@@ -790,7 +819,7 @@ width: 110px;
      line-height: 2.375rem;
      border-radius: 3px;
     width: 150px;
-    margin: 30px auto 30px auto;
+    margin: 10px auto 10px auto;
     text-decoration: none;
 }
 .card-modwindow__button:hover {

@@ -7,10 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <title>Банковские карты | Яндекс.Деньги</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
-
-
-
 
 <body>
     <div class="wrapper">
@@ -45,29 +43,13 @@
                 <div class="card-promo card-promo_effect_shadow">
                     <div class="card-promo__card">
                         <a class="card-promo__icon-link" href="#"></a>
-                        <a class="card-promo__link-deg" href="#">Понравился другой дизайн?</a>
+                        <a class="card-promo__link-deg" href="#" data-toggle="modal" data-target="#choose-card-design-modwindow">Понравился другой дизайн?</a>
                     </div>
 
                     <div class="card-promo__content">
                         <h3 class="card-promo__title card-promo__title_size_l">Карта Яндекс.Денег</h3>
                         <p class="paragraph paragraph_size_m">Карта. Деньги. Два кэшбэка</p>
                         <a class="promo-button promo-button_size_m" href="page-card.html">Заказать карту</a>
-                    </div>
-
-                    <div class="card-modwindow">
-                        <h3 class="card-view__title">Какой дизайн выберите?</h3>
-                        <div class="card-modwindow__card"></div>
-                        <ul class="card-modwindow__list">
-                            <li class="card-modwindow__item card-modwindow__item_selected"><img class="card-modwindow__img" src="img/card.svg"></li>
-                            <li class="card-modwindow__item"><img class="card-modwindow__img" src="img/card1.png"></li>
-                            <li class="card-modwindow__item"><img class="card-modwindow__img" src="img/card2.png"></li>
-                            <li class="card-modwindow__item"><img class="card-modwindow__img" src="img/card3.png"></li>
-                            <li class="card-modwindow__item"><img class="card-modwindow__img" src="img/card4.png"></li>
-                            <li class="card-modwindow__item"><img class="card-modwindow__img" src="img/card5.png"></li>
-                            
-                        </ul>
-
-                        <a class="card-modwindow__button" href="#">Выбрать</a>
                     </div>
 
                 </div>
@@ -192,7 +174,39 @@
                 </div>
             </div>
         </footer>
+
+        <!-- Choose card design modal window -->
+        <div id="choose-card-design-modwindow" class="modal fade">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="card-view__title">Какой дизайн выберите?</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card-modwindow__card"></div>
+                        <ul class="card-modwindow__list">
+                            <li class="card-modwindow__item"><img class="card-modwindow__img" src="img/card.svg"></li>
+                            <li class="card-modwindow__item"><img class="card-modwindow__img" src="img/card1.png"></li>
+                            <li class="card-modwindow__item"><img class="card-modwindow__img" src="img/card2.png"></li>
+                            <li class="card-modwindow__item"><img class="card-modwindow__img" src="img/card3.png"></li>
+                            <li class="card-modwindow__item"><img class="card-modwindow__img" src="img/card4.png"></li>
+                            <li class="card-modwindow__item"><img class="card-modwindow__img" src="img/card5.png"></li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="card-modwindow__button">Выбрать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Choose card design modal window -->
     </div>
+
+    <!-- Vendor scripts -->
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <!-- /Vendor scripts -->
 
     <!-- Custom scripts -->
     <script src="./dist/app.js"></script>
