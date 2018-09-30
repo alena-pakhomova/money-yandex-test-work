@@ -349,11 +349,38 @@
      width: 330px;
      height: 210px;
      margin: 35px 50px 30px 0;
-     background-image: url(img/card.svg);
-     background-size: cover;
      border-radius: 9px;
  }
 
+ .card-promo__icon-link_card1 {
+    background-image: url(img/card.svg);
+    background-size: cover;
+ }
+
+ .card-promo__icon-link_card2 {
+    background-image: url(img/card1.png);
+    background-size: cover;
+}
+
+.card-promo__icon-link_card3 {
+    background-image: url(img/card2.png);
+    background-size: cover;
+}
+
+.card-promo__icon-link_card4 {
+    background-image: url(img/card3.png);
+    background-size: cover;
+}
+
+.card-promo__icon-link_card5 {
+    background-image: url(img/card4.png);
+    background-size: cover;
+}
+
+.card-promo__icon-link_card6 {
+    background-image: url(img/card5.png);
+    background-size: cover;
+}
 
  .card-promo__slide {
      list-style-type: none;
@@ -778,5 +805,3 @@ width: 110px;
     border: 3px solid #FFCF01;
      transition: all 120ms;
 }
-
-
