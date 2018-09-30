@@ -36,34 +36,6 @@ function cardSwitcherItem(domElem, index, onClickCallback) {
         onClickCallback(self);
     };
 }
-function LocalStorageService() {
-    const SELECTED_CARD_INDEX_KEY = "selected_card_index";
-    
-    this.getSelectedCardIndex = function() {
-        let cardIndex = 1;
-        cardIndex = localStorage.getItem(SELECTED_CARD_INDEX_KEY);
-        if (!cardIndex) {
-            cardIndex = 1;
-        }
-
-        return cardIndex;
-    };
-
-    this.setSelectedCardIndex = function(selectedCardIndex) {
-        localStorage.setItem("selected_card_index", selectedCardIndex);
-    };
-}
-function router(options) {
-    const pathName = window.document.location.pathname;
-    const currentPageName = window.document.location.pathname.substr(1, pathName.length - 6).toLowerCase();
-    let currentModule = {};
-
-    if (currentPageName in options) {
-        currentModule = new options[currentPageName]();
-    } else {
-        currentModule = new options["index"]();
-    }
-}
 function indexPageModule() {
     let selectedCardSwitcherItem;
     let cardsSwitcherItems = [];
@@ -105,4 +77,32 @@ function pageCardModule() {
     }
 
     cardPreviewComponent.setCardPreview(cardIndex);
+}
+function LocalStorageService() {
+    const SELECTED_CARD_INDEX_KEY = "selected_card_index";
+    
+    this.getSelectedCardIndex = function() {
+        let cardIndex = 1;
+        cardIndex = localStorage.getItem(SELECTED_CARD_INDEX_KEY);
+        if (!cardIndex) {
+            cardIndex = 1;
+        }
+
+        return cardIndex;
+    };
+
+    this.setSelectedCardIndex = function(selectedCardIndex) {
+        localStorage.setItem("selected_card_index", selectedCardIndex);
+    };
+}
+function router(options) {
+    const pathName = window.document.location.pathname;
+    const currentPageName = window.document.location.pathname.substr(1, pathName.length - 6).toLowerCase();
+    let currentModule = {};
+
+    if (currentPageName in options) {
+        currentModule = new options[currentPageName]();
+    } else {
+        currentModule = new options["index"]();
+    }
 }

@@ -211,7 +211,6 @@
      font-size: 1.375rem;
      color: #000;
      font-weight: normal;
-     padding-bottom: 35px;
  }
 
  .card-view__link {
@@ -762,6 +761,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
     border-top: 2px solid #ccc;
     padding-top: 20px;
 }
@@ -790,7 +790,7 @@ width: 110px;
      line-height: 2.375rem;
      border-radius: 3px;
     width: 150px;
-    margin: 30px auto 30px auto;
+    margin: 10px auto 10px auto;
     text-decoration: none;
 }
 .card-modwindow__button:hover {
