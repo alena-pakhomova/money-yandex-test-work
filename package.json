@@ -1,7 +1,7 @@
 {
   "name": "money-yandex-test-work",
   "scripts": {
-    "start": "browser-sync start --server --files \"*.css, *.html, dist/*.js\" --browsers \"Chrome\"",
+    "start": "browser-sync start --server \"dist\" --files \"dist/custom/css/*.css, dist/*.html, dist/custom/js/*.js\" --browsers \"Chrome\"",
     "gulp": "./node_modules/.bin/gulp"
   },
   "author": "Alena Pakhomova",
@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "gulp": "^4.0.0",
-    "gulp-concat": "^2.6.1"
+    "gulp-concat": "^2.6.1",
+    "gulp-debug": "^4.0.0"
   }
 }
