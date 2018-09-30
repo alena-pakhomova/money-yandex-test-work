@@ -459,6 +459,7 @@
      display: block;
      text-align: center;
      margin-bottom: 35px;
+     box-sizing: content-box;
  }
 
 
@@ -507,7 +508,7 @@
 
  }
 
- /*------------------end main----------------------*/
+ /*------------------end main index ----------------------*/
 
  .footer {
      background-color: #2c2b29;
@@ -559,7 +560,11 @@
 
  /*-----------------page-card------------*/
 
- .card-promo__link-deg {
+.card_margin_b p {
+    margin-bottom: 0;
+}
+
+ .card-promo__card .card-promo__link-deg {
      color: #fff;
      line-height: 1.375rem;
      text-align: right;
@@ -568,9 +573,10 @@
      margin-bottom: 25px;
      margin-top: -10px;
      text-decoration: none;
+    font-family: "YandexSansText-Regular";
  }
 
- .card-promo__link-deg:hover {
+ .card-promo__card .card-promo__link-deg:hover {
      opacity: 0.6;
  }
 
@@ -587,9 +593,16 @@
      margin-bottom: 40px;
  }
 
- .promo-button_size_m {
-     width: 155px;
+ .promo-button.promo-button_size_m {
+     width: 160px;
+      font-family: "YandexSansText-Regular";
+     margin-top: 40px;
  }
+
+.promo-button.promo-button_size_m:hover {
+    text-decoration: none;
+    color: #fff;
+}
 
  /*-------------------price card-------------*/
 
@@ -733,6 +746,12 @@
      display: block;
      text-align: center;
  }
+.card-promo__button-yellow:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+
 /*---------------modal window-----------------------*/
 .card-modwindow {
     position: absolute;
@@ -791,20 +810,22 @@
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    border-top: 2px solid #ccc;
+    border-top: 4px solid #ccc;
     padding-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .card-modwindow__item {
       border: 3px solid #fff;
     border-radius: 5px;
     width: 110px;
-    height: 70px;
+    height: 72px;
      transition: all 120ms;
     cursor: pointer;
 }
 
 .card-modwindow__img {
-width: 110px;
+width: 104px;
     height: auto;
     object-fit: contain;
 }
@@ -821,6 +842,7 @@ width: 110px;
     width: 150px;
     margin: 10px auto 10px auto;
     text-decoration: none;
+     cursor: pointer;
 }
 .card-modwindow__button:hover {
     background-color: #DCDBDB;
